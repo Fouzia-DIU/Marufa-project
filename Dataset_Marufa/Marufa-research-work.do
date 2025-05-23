@@ -6,15 +6,20 @@
 clear
 
 * Set the working directory
-cd "D:\Desktop_20241026\DIU\Thesis Student- Marufa\Dataset_Marufa"
+cd "C:\Users\DCL\Documents\GitHub\Marufa-project\Dataset_Marufa"
 
 * Load the CSV file into Stata
-import delimited "Clean Data_Marufa.csv", clear
+import delimited "Clean Data_Marufa final.csv", clear
 
 * Display the first few rows of the dataset
 list in 1/10
 
 describe
+tab gender
 
+tab wheredoyouleave
+summarize age 
 
-tab healthyfoodoptionsfreshfruits
+tab age 
+
+tab parentseducation
